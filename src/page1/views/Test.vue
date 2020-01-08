@@ -1,6 +1,6 @@
 <template>
-  <div>
-    我是test
+  <div class="page-one-ctn">
+    ttttttttttttttttttttttttttt
   </div>
 </template>
 
@@ -8,14 +8,14 @@
 export default {
   data () {
     return {
-      d: '1'
     }
   }
 }
 </script>
 
-<style lans='scss'>
-a {
-  background: red;
-}
+<style lang='scss'>
+// .page-one-ctn {
+//   background: red;
+//   color: black;
+// }
 </style>

@@ -8,15 +8,14 @@
 export default {
   data () {
     return {
-      a: '1'
     }
   }
 }
 </script>
 
 <style lang='scss'>
-.page-one-ctn {
-  background: red;
-  color: black;
-}
+// .page-one-ctn {
+//   background: red;
+//   color: black;
+// }
 </style>

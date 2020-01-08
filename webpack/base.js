@@ -31,12 +31,12 @@ const base = {
               cacheDirectory: path.resolve(__dirname, '../build-cache/vue') 
             }
           },
-          {
-            loader: 'eslint-loader',
-            options: {
-              cache: true
-            }
-          }
+          // {
+          //   loader: 'eslint-loader',
+          //   options: {
+          //     cache: true
+          //   }
+          // }
         ]
       },
       // {
@@ -63,13 +63,13 @@ const base = {
             }
           }, 
           'babel-loader',
-          {
-            loader: 'eslint-loader',
-            options: {
-              cache: true,
-              cacheDirectory: true
-            }
-          },
+          // {
+          //   loader: 'eslint-loader',
+          //   options: {
+          //     cache: true,
+          //     cacheDirectory: true
+          //   }
+          // },
         ],
         include: [
           path.resolve(__dirname, '../src')
