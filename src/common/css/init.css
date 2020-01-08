@@ -1,0 +1,22 @@
+*{
+  font-family: 'PingFang SC', 'Helvetica', 'NotoSans', 'Roboto', 'Tahoma', 'Hiragino Sans GB', 'Arial', 'Microsoft YaHei', 'Sans-serif';
+  padding: 0;
+  margin: 0;
+}
+html, body {
+  min-height: 100%;
+  overflow: auto;
+  font-size: 12px;
+  color: #888;
+  background: white;
+}
+// #app {
+//   -webkit-touch-callout: none;
+//   -webkit-user-select: none;
+//   -khtml-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   min-height: 100%;
+//   background: white;
+// }
