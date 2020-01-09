@@ -15,7 +15,7 @@
 
 <script>
 import Form from './Form'
-import logoImg from '@/assets/logo.png'
+import logoImg from '@/assets/img/logo.png'
 
 export default {
   data () {

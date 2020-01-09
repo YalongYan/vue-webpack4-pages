@@ -1,20 +1,15 @@
 <template>
-  <div>
-    <Main/>
+  <div id="app">
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Main from './components/Main'
-
 export default {
   name: 'app',
-  data () {
-    return {
-    }
-  },
-  components: {
-    Main
-  }
+  // data () {
+  //   return {
+  //   }
+  // }
 }
 </script>

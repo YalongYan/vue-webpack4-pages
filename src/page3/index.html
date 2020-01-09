@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html style="min-width: 1060px;">
+  <head>
+    <meta charset="utf-8">
+    <!-- 初始宽度是设备宽度 初始缩放是 1.0 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- 让网页自动调用双核浏览器的极速模式 -->
+    <meta name="renderer" content="webkit">
+    <!-- Edge模式告诉IE以最高级 模式渲染文档，也就是任何IE版本都以当前版本所支持的最高级标准模式渲染，避免版本升级造成的影响。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 下面这三个是用来清除浏览器缓存的 -->
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-store,must-revalidate,max-age=0" />
+    <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT"/>
+    <title>我是page1</title>
+    <!-- <script src="./some.js"></script> -->
+  </head>
+  <body>
+    <style>
+      /* 这里可以加样式，也可以吧样式放到公共引用里 */
+      #app {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Chrome/Safari/Opera */
+        -khtml-user-select: none; /* Konqueror */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+        min-height: 100%;
+        background: white;
+      }
+    </style>
+
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
