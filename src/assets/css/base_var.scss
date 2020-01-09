@@ -1,0 +1,47 @@
+$ff: 'PingFang SC', 'Helvetica', 'NotoSans', 'Roboto', 'Tahoma', 'Hiragino Sans GB', 'Arial', 'Microsoft YaHei', 'Sans-serif';
+$color-danger: #EE2223 !default;
+$color-link: #3B70CE !default;
+$color-txt-thick: #333 !default;
+$color-txt: #666 !default;
+$color-txt-light: #999 !default;
+$color-gray: #f5f5f5;
+
+$color-border:#d9d9d9;
+
+// 表格边框颜色
+$color-tb-border:#F0F0F0;
+// 表格顶线颜色
+$color-tb-top-bor: #AAAAAA;
+// 表头背景色
+$th-bac-color: #F7F9FD;
+
+// 输入框focus
+$color-border-focus:#505766;
+// checkbox checked 颜色
+$color-checked: #fff;
+
+$color-switch: #18B681;
+
+// :hover
+$color-hover: #F0F3F9;
+
+// 选中
+$color-selected: #FFF9ED;
+
+$msg-color-map: (
+  success:#00B39E,
+  info:#FF8B00,
+  warning:#FF8B00,
+  error:#4C4C4C
+);
+$font-size-base: 12px !default;
+$fz-s: 12px;
+$fz-m: 13px;
+$fz-l: 14px;
+$fz-xl: 16px;
+
+@mixin txt-elips {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

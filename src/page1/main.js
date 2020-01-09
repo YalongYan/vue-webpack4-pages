@@ -8,11 +8,9 @@ import './filters'
 
 Vue.use(ElementUI);
 
-// new Vue({
-//   el: '#app',
-//   router,
-//   render: h => h(App)
-// })
+import '@/assets/css/base_style.scss'
+import '@/assets/css/page1.scss'
+
 new Vue({
   router,
   store,

@@ -1,0 +1,102 @@
+html,body{
+  height: 100%;
+  overflow: hidden;
+  color: $color-txt-thick;
+}
+body.yb-rt,
+body{
+  font-size: $font-size-base;
+  font-family: $ff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f4f4f4;
+  button,
+  pre,
+  textarea,
+  input{
+    font-family: $ff;
+  }
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+::-ms-clear,::-ms-reveal{display:none;}
+.clearfix{
+  zoom: 1;
+  &:before,
+  &:after{
+    content: "";
+    display: table;
+  }
+  &:after{
+    clear: both;
+  }
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+.hidden{
+  display: none!important;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a.act{
+  color: $color-link;
+}
+li{
+  list-style: none;
+}
+ul{
+  -webkit-padding-start: 0px;
+}
+input,
+input:focus,
+textarea,
+textarea:focus{
+  outline: none
+}
+table{
+  table-layout: fixed
+}
+.pointer{
+  cursor: pointer;
+}
+.inline-block{
+  display: inline-block
+}
+
+// webkit滚动条样式
+::-webkit-scrollbar-button{
+  display: none
+}
+::-webkit-scrollbar-track{
+  display: none
+}
+::-webkit-scrollbar-track-piece{
+  display: none
+}
+::-webkit-scrollbar{
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background:#c1c1c1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-corner {
+  display: none
+}
+::-webkit-scrollbar-resizer  {
+  display: none
+}

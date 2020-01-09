@@ -8,6 +8,8 @@ import App from './App.vue';
 Vue.use(ElementUI)
 
 import '@/assets/css/iconfont/index.css'
+import '@/assets/css/base_style.scss'
+import '@/assets/css/page3.scss'
 
 new Vue({
   router,

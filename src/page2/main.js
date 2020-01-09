@@ -7,6 +7,9 @@ import App from './App.vue';
 
 Vue.use(ElementUI);
 
+import '@/assets/css/base_style.scss'
+import '@/assets/css/page2.scss'
+
 new Vue({
   router,
   store,

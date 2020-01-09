@@ -82,12 +82,13 @@ const base = {
         'style-loader',
         'css-loader',
         'sass-loader',
-        // {
-        //   loader: 'sass-resources-loader',
-        //   options: {
-        //     resources: path.resolve(__dirname, '../src/assets/css/base_var.scss')
-        //   }
-        // }
+        // 专门处理scss定义全局变量
+        {
+          loader: 'sass-resources-loader',
+          options: {
+            resources: path.resolve(__dirname, '../src/assets/css/base_var.scss')
+          }
+        }
       ]
     },
     {
