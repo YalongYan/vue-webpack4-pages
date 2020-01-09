@@ -11,7 +11,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
-const distDir = path.resolve(__dirname, '../../iform_web/src/main/webapp/static')
+const distDir = path.resolve(__dirname, '../dist/')
 
 module.exports = merge.smart(base, {
   mode: 'production',
@@ -20,12 +20,13 @@ module.exports = merge.smart(base, {
     modules.forEach(m => {
       entries[m] = path.resolve(__dirname, `../src/${m}/main.js`)
     })
+    console.log(entries)
     return entries
   })(),
   output: {
     filename: '[name].[hash].js',
     path: distDir,
-    publicPath: '/iform_web/static/'
+    publicPath: '../dist/'
   },
   optimization: {
     splitChunks: {
@@ -83,18 +84,18 @@ module.exports = merge.smart(base, {
         template: `./src/${module}/index.html`
       })
     }),
-    new CopyWebpackPlugin(
-      [{
-        from: path.resolve(__dirname, '../static'),
-        to: 'static',
-        ignore: ['.*']
-      }]
-    ),
-    new CleanWebpackPlugin(),
+    // new CopyWebpackPlugin(
+    //   [{
+    //     from: path.resolve(__dirname, '../static'),
+    //     to: 'static',
+    //     ignore: ['.*']
+    //   }]
+    // ),
+    // new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[hash].css',
       chunkFilename: '[id].[hash].css',
-    }),
-    new BundleAnalyzerPlugin()
+    }), 
+    // new BundleAnalyzerPlugin()
   ]
 })
