@@ -108,7 +108,7 @@ const base = {
         loader: 'file-loader',
         options: {
           name: '[name].[hash:7].[ext]',
-          outputPath: 'images/'
+          outputPath: 'fonts/'
         }
       }
     }

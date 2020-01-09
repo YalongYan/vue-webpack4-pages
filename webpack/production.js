@@ -96,6 +96,6 @@ module.exports = merge.smart(base, {
       filename: '[name].[hash].css',
       chunkFilename: '[id].[hash].css',
     }), 
-    // new BundleAnalyzerPlugin()
+    new BundleAnalyzerPlugin()
   ]
 })
