@@ -1,6 +1,9 @@
 <template>
   <div class="aaaaa">
-    tttttttttttttttttttttttttttsss
+    <router-link to="/page1-main">Main页面</router-link>
+    <br/>
+    <br/>
+    这是test页面 
   </div>
 </template>
 

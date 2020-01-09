@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Main from '@/page1/views/Main'
 import Test from '@/page1/views/Test'
-// import store from '../store'
+import store from '../store'
 
 // 要告诉 vue 使用 vueRouter
 Vue.use(VueRouter)
@@ -18,7 +18,7 @@ const routes = [
       path:"/page1-main",
       name: 'page1-main',
       beforeEnter: (from, to, next) => {
-        // store.commit('updateName')
+        store.commit('set_num')
         next()
       },
       component: Main
