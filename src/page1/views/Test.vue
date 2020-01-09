@@ -1,5 +1,5 @@
 <template>
-  <div class="page-one-ctn">
+  <div class="aaaaa">
     tttttttttttttttttttttttttttsss
   </div>
 </template>
